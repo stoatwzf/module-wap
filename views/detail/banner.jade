@@ -1,0 +1,16 @@
+mixin banner(mold)
+    case mold
+        when "ticket"
+            +ticketbanner()
+
+
+mixin ticketbanner()
+    .photo-show
+        a(href="photoshow.html")
+            .ps-con
+                h3 景区标题
+                span
+                    i.page-icon.icon-photo
+                    | 共10张
+            img(src="/images/demo/photoshow-img.jpg",alt="")
+

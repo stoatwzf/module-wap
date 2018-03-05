@@ -1,0 +1,67 @@
+mixin list(mold)
+    ul.page-list(class=mold+"-list")
+        - for (var x = 0; x < 5; x++)
+            li
+                case mold
+                    when "ticket"
+                        +ticketlist()
+                    when "hotel"
+                        +hotellist()
+
+//-门票列表
+mixin ticketlist()
+    a(href="ticket/detail")
+        .page-list-img
+            img(src="/images/demo/ticket-list-img2.jpg")
+        .page-list-info
+            h3.page-list-title 景区标题标题
+            p.page-list-article 简介：景区简介景区简介景区简介景区简介！
+            .page-list-zy
+                span.page-list-tits 5A 景区
+                span.page-list-tits 历史人文
+                span.page-list-tits 5A 景区
+                span.page-list-tits 历史人文
+                span.page-list-tits 5A 景区
+                span.page-list-tits 历史人文
+            p.page-list-explian
+                span.fl 已售X
+                    em.c-base.score 5分
+                span.original-price
+                    strong 原价：1530
+                span.price
+                    em ￥
+                    strong 2180.0
+//-酒店列表
+mixin hotellist()
+    a(href='hotel/detail')
+        .page-list-img
+            img(src='/images/demo/hotel-list-img.jpg', alt='')
+        .page-list-info
+            h3.page-list-title
+                | 黄果树合源大酒店
+            p.page-list-article
+                i.page-icon.index-ditu
+                | 黄果树景区售票大厅旁
+            p.page-list-explian
+                span.pro-flag.c-base.border-base.hotel-base 酒店标签
+                span.hotel-icon
+                    i.page-icon.icon-wifi
+                    i.page-icon.icon-spa
+                    i.page-icon.icon-kongtiao.no
+                    i.page-icon.icon-iconfont-p.no
+                    i.page-icon.icon-res
+                    i.page-icon.icon-dianti
+                    i.page-icon.icon-kuandai
+                    i.page-icon.icon-xljc
+                    i.page-icon.icon-jsf
+            p.page-list-explian.clearfix
+                span.fl
+                    | 已售
+                    em.sale-num 222
+                    em.c-base.score 5分
+                span.price
+                    em ￥
+                    strong 2180.0
+                    | 起
+                span.original-price.yj
+                    strong 原价:1530

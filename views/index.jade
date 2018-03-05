@@ -1,0 +1,334 @@
+extends layout
+block append top
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+block content
+  //banner
+  .swiper-banner.home-banner
+    .swiper-wrapper
+      .swiper-slide: a
+        img(src="images/demo/home-img1.jpg")
+      .swiper-slide: a
+        img(src="images/demo/home-img2.jpg")
+      .swiper-slide: a
+        img(src="images/demo/home-img1.jpg")
+      .swiper-slide: a
+        img(src="images/demo/home-img2.jpg")
+    .swiper-pagination
+    .ban-notice
+      p 黄果树新版上线，各种优惠等你来游
+  //导航
+  nav.nav-swiper
+    .swiper-wrapper
+      .swiper-slide
+        a(href="/ticket")
+          strong.nav-bg1: i
+          span 景区
+        a(href="/hotel")
+          strong.nav-bg2: i
+          span 酒店
+        a(href="/tours")
+          strong.nav-bg3: i
+          span 跟团游
+        a(href="/zyx")
+          strong.nav-bg4: i
+          span 自由行
+        a(href="/special-offer")
+          strong.nav-bg5: i
+          span 限时特价
+        a(href="/foods")
+          strong.nav-bg6: i
+          span 美食
+        a(href="/strategy-list")
+          strong.nav-bg7: i
+          span 攻略
+        a(href="/duocaiguizhou")
+          strong.nav-bg8: i
+          span 多彩贵州
+      //如增加模块如下
+      .swiper-slide
+        a(href="/customized")
+          strong.nav-bg9: i
+          span 私人定制
+        a(href="/newscore")
+          strong.nav-bg10: i
+          span 新闻中心
+        a(href="/activity")
+          strong.nav-bg11: i
+          span 活动中心
+        a(href="/goods")
+          strong.nav-bg12: i
+          span 特产
+    .nav-pagination
+  .page-line
+  //特价
+  h3.home-tit.clearfix.borb0
+    i.page-icon.icon-alarm-clock
+    | 限时特价
+    a.more(href="/activity")
+      em
+      em
+      em
+  .rec-img
+    i.rec-tag
+    i.rec-line.linet
+    i.rec-line.lineb
+    a(href="#")
+      img(src="/images/demo/rec-img.jpg", alt="")
+  .buying-info
+    h3 限时特惠，还等什么
+    h4 活动期间内手机订购黄果树产品满500元返50
+    p
+      span
+        | ￥
+        strong 1382
+        | 起
+      em 3.5折
+      del ￥ 2054
+  .buying-time
+    strong 距离结束
+    span 00
+    | 天
+    span 04
+    | ：
+    span 55
+    | ：
+    span 13
+    input(type="button",value="立即抢购").qg-btn
+  .page-line
+
+  h3.home-tit.clearfix.tit-bg.bort
+    i.page-icon.icon-snail
+    | 蜗牛推荐
+    a(href="#").more
+      em
+      em
+      em
+  .rec-tab.tabs
+    a(href="javascript:;").active 景区
+    a(href="javascript:;") 酒店
+    a(href="javascript:;") 跟团
+    a(href="javascript:;") 美食特产
+  .hotel.rec-list
+    .swiper-wrapper
+      ul.clearfix.swiper-slide
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+      ul.clearfix.swiper-slide
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+      ul.clearfix.swiper-slide
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+      ul.clearfix.swiper-slide
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+        li: a(href="#")
+          img(src="images/demo/keepsake-img1.jpg")
+          h4 黄果树门票+客栈+观光游
+          p
+            del.original-price 原：682
+            span.price 现：382
+
+  h3.home-tit.clearfix.tit-bg.bort
+    i.page-icon.icon-guess-you-like
+    | 猜你喜欢
+    a(href="#").more
+      em
+      em
+      em
+  .guess-like
+    ul
+      li: a(href="#")
+        img(src="images/demo/home-img2.jpg", alt="")
+        .gline-con
+          h4
+            strong 黄果树
+            span.tip 5A 景区
+          p.con-text 特色：今起可加1元换购独家动物园钥匙圈...
+          p.con-lab
+            span.sold
+              | 已有
+              em 1214
+              | 人购买
+            span.price
+              em 4.8
+          p.con-lab
+            span.sold
+              del 原价：1569
+            span.price
+              em ￥1180.0
+              | 起
+      li: a(href="#")
+        img(src="images/demo/home-img2.jpg", alt="")
+        .gline-con
+          h4
+            strong 黄果树
+            span.tip 5A 景区
+          p.con-text 特色：今起可加1元换购独家动物园钥匙圈...
+          p.con-lab
+            span.sold
+              | 已有
+              em 1214
+              | 人购买
+            span.price
+              em 4.8
+          p.con-lab
+            span.sold
+              del 原价：1569
+            span.price
+              em ￥1180.0
+              | 起
+      li: a(href="#")
+        img(src="images/demo/home-img2.jpg", alt="")
+        .gline-con
+          h4
+            strong 黄果树
+            span.tip 5A 景区
+          p.con-text 特色：今起可加1元换购独家动物园钥匙圈...
+          p.con-lab
+            span.sold
+              | 已有
+              em 1214
+              | 人购买
+            span.price
+              em 4.8
+          p.con-lab
+            span.sold
+              del 原价：1569
+            span.price
+              em ￥1180.0
+              | 起
+  .page-line
+  .mask
+  //脚本
+  script.
+    //banner
+    var swiper_one = new Swiper('.swiper-banner', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      loop: true,
+      effect: 'fade', //fade cube coverflow flip
+      autoplay: 3000,
+      speed: 500,
+      autoplayDisableOnInteraction: false //操作完后不禁止动画
+    });
+    $(function () {
+      //导航
+      if ($(".nav-swiper .swiper-slide").length > 1) {
+        var swiper_nav = new Swiper('.nav-swiper', {
+          pagination: '.nav-pagination',
+          loop: true
+
+        });
+      }
+      //蜗牛推荐
+      var tabsSwiper = new Swiper('.rec-list', {
+        paginationClickable: true,
+        loop: true,
+        autoHeight: true,
+        onSlideChangeStart: function (Swiper) {
+          $(".tabs .active").removeClass('active');
+          $(".tabs a").eq($('.rec-list .swiper-slide-active').attr('data-swiper-slide-index')).addClass('active');
+        }
+      });
+
+      $(".tabs a").on('click', function (e) {
+        if ($(this).hasClass("active")) {
+
+        }
+        else {
+          $(".tabs .active").removeClass('active');
+          $(this).addClass('active');
+          tabsSwiper.slideTo($(this).index() + 1);
+        }
+      })
+
+    });
+
+
+
+

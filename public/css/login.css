@@ -1,0 +1,31 @@
+.login-header { height: 8.5rem; background: url("../images/login/login-header.jpg") no-repeat; background-size: cover; }
+.login-explian { padding: 0 0.15rem; overflow: hidden; }
+.login-explian a { color: #fff; font-size: 0.6rem; }
+.login-explian a:last-child { float: right; margin-top: 0.3rem; }
+.login-explian a i { font-size: 0.75rem; vertical-align: middle; margin-right: 0.3rem; }
+body { -webkit-background-size: cover; background-size: cover; }
+.login-bg { background-image: url(../images/login/login-bg.jpg); }
+.register-bg { background-image: url(../images/login/reg-bg.jpg); }
+.btn-handle{height:2.25rem; line-height: 2.25rem;}
+.btn { background: #ffcc00; margin: 0.75rem 0; height:2.25rem; line-height: 2.25rem; color:#144ebf; letter-spacing:0.5rem; width:100%;}
+.order-list-big li input { outline: none; color: #fff; width: 10rem; height:1.3rem; line-height: 1.3rem; background-color: transparent; }
+.login-panel label.error,.register-block label.error{ line-height: 1.3rem;}
+.login-panel { margin: 0 1rem; padding:1rem 0 0.6rem; }
+.order-list { background-color: transparent; }
+.order-list li { border-top: none; border-bottom: 1px solid rgba(255,255,255,0.5); }
+.order-list li:last-child{border-bottom: 1px solid rgba(255,255,255,0.5);; }
+.order-important { background-color: transparent; }
+.login-logo { width: 80%; margin: 3rem auto 2rem; }
+.login-logo img { width: 100%; height: 100%; }
+.icon-txt { color: #fff; font-size: .8rem; vertical-align: middle; padding: 0 .6rem 0 0; border-right: 1px solid rgba(255,255,255,0.5);; margin-right: .5rem; }
+.register-block { margin: 0 1rem;  padding:1.6rem 0 0.6rem; }
+input[type=checkbox] { display: none; }
+.login-explian a { display: inline-block; height: 1rem; line-height: 1rem; vertical-align: middle; padding-top: 0.4rem; }
+.login-explian a span { display: inline-block; vertical-align: middle; height: .6rem; line-height: .6rem; }
+.login-explian input[type=checkbox] + label { position: relative; display: inline-block; vertical-align: middle; width: .5rem; height: .5rem; outline: none; border: 1px solid #fff; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: transparent; }
+.login-explian input[type=checkbox]:checked + label { background-color: #15bea0; }
+.order-list-big li input.validate_txt { width: 5rem; }
+.validate-btn { float: right; margin-top: .2rem; height: 1rem; line-height: 1rem; text-align: center; color: #ffeb7b; font-weight: normal; }
+
+.login-top { width: 16rem; height: 13.75rem; background: url(../images/login/login-top.png) no-repeat center; background-size: 100% 100%; }
+.reg-top { width: 16rem; height:7.5rem; background: url(../images/login/reg-top.png) no-repeat center; background-size: 100% 100%; }

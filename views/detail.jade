@@ -1,0 +1,31 @@
+extends layout
+block append top
+    link(rel="stylesheet", type="text/css", href="/css/details.css")
+    script(type="text/javascript", src="/js/jquery.flexslider-min.js")
+    script(type="text/javascript", src="/js/touch-0.2.14.min.js")
+block content
+    include detail/banner
+    include detail/title
+    include detail/address
+    include detail/main
+    include detail/recommend
+    include detail/bottomSubmit
+    +banner(mold)
+    +title(mold)
+    .page-line
+    +address(mold)
+    .page-line
+    +main(mold)
+    +recommend(mold)
+    +bottomSubmit(mold)
+    script.
+        $('.pxxq').click(function () {
+            $('.masks,.order-show').fadeIn(0);
+            var ck_w = $(window).height();
+            $(".order-show").height(ck_w * 0.9);
+            $(".order-showcon").height(ck_w * 0.9 - $("#show-h1").outerHeight(true) - $("#show-h2").outerHeight(true) - (winWidth / 640) * 40 * 0.8);
+        })
+        $(".masks,.close-btn").click(function () {
+            $('.masks,.order-show').hide();
+        });
+//-block append footer

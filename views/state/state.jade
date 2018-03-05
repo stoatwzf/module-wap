@@ -1,0 +1,29 @@
+extends ../layout
+block append top
+    link(rel="stylesheet", type="text/css", href="css/order.css")
+block content
+    .pay-results
+        - if( substate == "成功")
+            i.font-icon.icon-iconfont-chenggong
+            p 提交成功
+        - else
+            i.font-icon.icon-iconfont-shibai
+            p 提交失败
+    .results-info
+        - if( substate == "成功" )
+            p 黄果树大草原门票 (1份)
+            p 已成功出票，请查收您的 <em class="c-base">短信</em> ，祝您旅途愉快！
+        - else
+            p 黄果树大草原门票 (1份)
+            p 请重新购买
+    .results-handle
+        - if( substate == "成功" )
+            a(href="member.html") 查看订单
+            | |
+            a(href="#") 继续购买
+        - else
+            a(href="#") 重新购买
+            | |
+            a(href="index.html") 返回首页
+block footer
+

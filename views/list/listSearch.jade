@@ -1,0 +1,76 @@
+mixin search(mold)
+    case mold
+        when "ticket"
+            +ticketsearch()
+        when "hotel"
+            +hotelsearch()
+
+//-门票搜索
+mixin ticketsearch()
+    .head-box
+        .head-search
+            .search-box
+                input(type="text",placeholder="搜索关键字")
+                input(type="submit")
+        section.header-tab.hs-tab
+            ul.tab.clearfix.ticket-tab#searchtab
+                li(data-div="all")
+                    a(href="javascript:;") 全部地区
+                li(data-div="default")
+                    a(href="javascript:;") 全部主题
+    .tab-search-panel.tab-address#all
+        ul.clearfix
+            li: a(href="#").c-base 全部景区
+            li: a(href="#") 黄果树
+            li: a(href="#") 大瀑布
+            li: a(href="#") 大瀑布
+            li: a(href="#") 大瀑布
+            li: a(href="#") 黄果树
+            li: a(href="#") 大瀑布
+            li: a(href="#") 黄果树
+            li: a(href="#") 黄果树
+            li: a(href="#") 大瀑布
+            li: a(href="#") 黄果树
+    ul.tab-search-panel#default
+        li: a(href="#").c-base 历史人文
+        li: a(href="#") 主题乐园
+
+//-酒店搜索
+mixin hotelsearch()
+    .head-box
+        .head-search
+            .stay-away.fl
+                .fl
+                    .stay-time
+                        | 住
+                        span 05-25
+                    .away-time
+                        | 离
+                        span 05-26
+                i
+            .search-box.search-hotel.fr
+                input(type='text', placeholder='搜索关键字')
+                input(type='submit')
+        section.header-tab.hs-tab
+            ul#searchtab.tab.clearfix.ticket-tab.hotel-tab
+                li(data-div='area')
+                    a(href='javascript:;') 全部区域
+                li(data-div='mold')
+                    a(href='javascript:;') 全部类型
+                li(data-div='price')
+                    a(href='javascript:;') 排序
+    ul#area.tab-search-panel
+        li: a.c-base(href='#') 全部地区
+        li: a(href='#') 河东区
+        li: a(href='#') 河西区
+        li: a(href='#') 加格达奇中心区
+    ul#mold.tab-search-panel
+        li: a.c-base(href='#') 家庭公寓
+        li: a(href='#') 快捷连锁
+        li: a(href='#') 高端连锁
+    ul#price.tab-search-panel
+        li: a.c-base(href='#') 默认排序
+        li: a(href='#') 价格从高到底
+        li: a(href='#') 价格从低到高
+        li: a(href='#') 销量从高到低
+        li: a(href='#') 销量从低到高

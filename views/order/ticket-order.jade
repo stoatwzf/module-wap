@@ -1,0 +1,150 @@
+extends ../layout
+block append top
+    link(rel="stylesheet", type="text/css", href="css/order.css")
+    script(type="text/javascript", src="js/touch-0.2.14.min.js")
+block content
+    header.myorder-header.pro-header
+        h3.myorder-title 黄果树大草原
+        p.myorder-explian
+            | 请在游玩前1天的
+            em.c-base 22:00
+            | 完成预订
+        p.myorder-explian
+            a(href="javascript:;").pxxq 票型详情&gt;
+    .page-line
+    ul.order-list.myorder-list
+        li
+            label.lab-title 使用日期
+            .order-item
+                a(href="calendar.html")
+                    span.order-time 2015-05-25
+                    i.font-icon.icon-iconfont-jiantou
+        li
+            label.lab-title 购买数量
+            .order-item
+                span.price.buy-num
+                    strong
+                        b#price 214
+                        | 元/张
+                span.fr
+                    input(type="tel",value="1").number
+    .page-line
+    ul.order-list.myorder-list#user
+        li.pl3
+            label.lab-title
+                i.mandatory *
+                | 游客姓名
+            .order-item
+                input(type="text",value="",placeholder="请填写姓名").order-text
+                i.font-icon.fr.icon-iconfont-xie
+        li.pl3
+            label.lab-title
+                i.mandatory *
+                | 手机号
+            .order-item
+                input(type="tel",value="",placeholder="请填写手机号").order-text
+                i.font-icon.fr.icon-iconfont-xie
+        li.pl3
+            label.lab-title
+                i.mandatory *
+                | 身份证
+            .order-item
+                input(type="text",value="",placeholder="请填写身份证").order-text
+                i.font-icon.fr.icon-iconfont-xie
+    .page-line
+    ul.order-list.myorder-list
+        li
+            label.lab-title 备注
+            .order-item
+                textarea(rows="3").order-textarea
+    .page-line
+    ul.order-list.myorder-list
+        li
+            label.lab-title.order-info.order-title 预订须知
+            .order-item.order-content
+                | 环球影城【扫码入园】票种票源紧张，库存实时变动，如恰逢您无法购买，请选择其它取票方式，如环球影城门口取票等，小编们会尽快补充【扫码入园】的门票资源的！请大家知晓。
+    .page-line
+    footer.order-footer
+        .order-total.float-layer
+            a(href="ticket-pay.html").fr.btn-order.background-base 提交订单
+            a(href="shopping.html").fr.btn-order.background-fd 加入购物车
+            p.total-price
+                | 总计：
+                span.price.ze
+                    em ￥
+                    strong#totalprice 2180
+    .masks
+    .order-show.hide
+        p.order-tit#show-h1
+            | 新加坡环球影城优惠套票
+            i.close-btn.font-icon.icon-iconfont-32pxchaxian
+        .details-tp.mb05#show-h2
+            .order-sprice
+                span.yj ￥2110.0
+                span.xj
+                    em ￥
+                    | 2180.0
+        .order-showcon
+            p.order-showcon-tit 有效日期
+            p 游玩日期当日有效
+            p.order-showcon-tit 预订须知
+            p.
+                环球影城【扫码入园】票种票源紧张，库存实时变动，如恰
+                逢您无法购买，请选择其它取票方式，如环球影城门口取票
+                等，小编们会尽快补充【扫码入园】的门票资源的！请大家
+                知晓。环球影城【扫码入园】票种票源紧张，库存实时变动，如恰
+                逢您无法购买，请选择其它取票方式，如环球影城门口取票
+                等，小编们会尽快补充【扫码入园】的门票资源的！请大家
+                知晓。环球影城【扫码入园】票种票源紧张，库存实时变动，如恰
+                逢您无法购买，请选择其它取票方式，如环球影城门口取票
+                等，小编们会尽快补充【扫码入园】的门票资源的！请大家
+                知晓。环球影城【扫码入园】票种票源紧张，库存实时变动，如恰
+                逢您无法购买，请选择其它取票方式，如环球影城门口取票
+                等，小编们会尽快补充【扫码入园】的门票资源的！请大家
+                知晓。环球影城【扫码入园】票种票源紧张，库存实时变动，如恰
+                逢您无法购买，请选择其它取票方式，如环球影城门口取票
+                等，小编们会尽快补充【扫码入园】的门票资源的！请大家
+                知晓。
+    script(type="text/javascript", src="js/pageItem.js")
+    script.
+        $(function () {
+            $(".number_show").numSpinner({
+                min: 0, max: 9,
+                onChange: function (evl, value) {
+                    if ($("#route-list").length > 0) {
+                        routetotalprice();
+                    }
+                    else {
+                        tem_total = operation.accMul(price1, value);
+                    }
+                }
+            });
+
+            $("#user").find("input").focus(function () {
+                $(this).next("i").removeClass("icon-iconfont-xie").addClass("icon-iconfont-32pxchaxian");
+            }).blur(function () {
+                $(this).next("i").removeClass("icon-iconfont-32pxchaxian").addClass("icon-iconfont-xie");
+            });
+        });
+
+        $('.pxxq').click(function () {
+            $('.masks,.order-show').fadeIn(0);
+            var ck_w = $(window).height();
+            $(".order-show").height(ck_w * 0.9);
+            $(".order-showcon").height(ck_w * 0.9 - $("#show-h1").outerHeight(true) - $("#show-h2").outerHeight(true) - (winWidth / 640) * 40 * 0.8);
+        })
+
+        $(".masks,.close-btn").click(function () {
+            $('.masks,.order-show').hide();
+        });
+
+
+
+
+
+block footer
+
+
+
+
+

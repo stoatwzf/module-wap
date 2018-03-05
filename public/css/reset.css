@@ -1,0 +1,54 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, b, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, i{margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-family:inherit;  vertical-align:baseline;}
+ 
+body{ font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; min-height: 100%; height: auto; position:relative;}
+html{ font-size: 20px; min-height: 100%; height: auto;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse;}
+caption, th, td{ font-weight:normal}
+blockquote:before, blockquote:after,  q:before, q:after{content:''}
+blockquote, q{quotes:""""}
+a{ text-decoration:none; -webkit-appearance: none;}
+a:visited { }
+input{ vertical-align:middle;}
+img{ border:none; vertical-align:middle; max-width: 100%;}
+input[type="text"],input[type="password"]{outline:medium;}
+input[type="submit"], input[type="reset"], input[type="button"], button,input[type="number"] { -webkit-appearance: none; }
+
+.clearfix:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; font-size:0; line-height:0;}
+.clearfix{ display:inline-block;}
+*html .clearfix{ height:1%;}
+.clearfix{ display:block;}
+*{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+html,body{-webkit-text-size-adjust:none;}
+.body-ce{ background-color: #cecece;}
+
+input[type=number]::-webkit-outer-spin-button,input[type="text"]::-webkit-inner-spin-button,input[type="password"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;margin: 0; border-radius: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.fr{ float: right;}
+.fl{ float: left;}
+.tr{ text-align: right;}
+.ofh{ overflow: hidden;}
+.ml10{ margin-left: 1rem;}
+.mt10{ margin-top: 1rem;}
+.w100{ width: 100%;}
+
+
+.color1{ color: #999;}
+.none{ display: none;}
+.mr02{ margin-right: 0.2rem;}
+.mr05{ margin-right: 0.5rem;}
+.pt0{ padding-top: 0;}
+.mb02{ margin-bottom: 0.2rem;}
+.pl05{ padding-left: 0.5rem;}
+.pl1{ padding-left: 1rem;}
+.mb05{ margin-bottom: 0.5rem;}
+.mb08{ margin-bottom: 0.8rem;}
+.pb05{ padding-bottom:0.5rem;}
+.pt05{ padding-top:0.5rem; }
+.bor-b{ border-bottom:1px solid #eee;}

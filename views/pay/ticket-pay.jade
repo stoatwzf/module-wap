@@ -1,0 +1,71 @@
+extends ../layout
+block append top
+    link(rel="stylesheet", type="text/css", href="css/order.css")
+    script(type="text/javascript", src="js/touch-0.2.14.min.js")
+block content
+    header.myorder-header.pro-header
+        h3.myorder-title 黄果树大草原
+        p.myorder-explian
+            span
+                | 请在
+                em.c-base 30
+                | 分钟内支付订单，否则订单将被取消
+    .order-details#orderDetails
+        ul
+            li
+                label.lab-title 费用明细
+                .order-item
+                    span.price
+                        em ￥
+                        strong 2180
+                    | *1
+            li
+                label.lab-title 游客信息
+                .order-item
+                    p 王大炮
+                    p 手机号  15945871256
+                    p 身份证  33090215498214785300
+    ul.order-list.account-list.bt
+        li#arrow
+            label.lab-title 订单总额
+            .order-item
+                span.price
+                    em ￥
+                    strong 2180
+                a(href="javascript:;").arrow
+                    i.font-icon.icon-iconfont-jiantou
+    .page-line
+    ul.order-list.pay-list#pay-mold
+        li.wenxin: a(href="javascript:;")
+            label.lab-title
+                i.font-icon.icon-iconfont-weixin
+                | 微信支付
+            i.font-icon.fr.icon-iconfont-gougou
+        li.zhifubao: a(href="javascript:;")
+            label.lab-title
+                i.font-icon.icon-iconfont-zhifubao
+                | 支付宝
+            i.font-icon.fr.icon-iconfont-gougou
+    .page-line
+    .btn-handle
+        a(href="ticket-pay-success.html").btn 去支付
+
+    script.
+        $(function () {
+            var paymold = $("#pay-mold a");
+            touch.on("#arrow", "tap", function () {
+                $("#orderDetails").slideToggle();
+                $(this).find("a").toggleClass("arrow-down");
+                $(this).parent().toggleClass("arrow-down");
+            });
+            paymold.on("touchstart", function () {
+                paymold.find(".icon-iconfont-gougou").removeClass("c-base");
+                $(this).find(".icon-iconfont-gougou").addClass("c-base");
+            });
+        });
+block footer
+
+
+
+
+

@@ -1,0 +1,29 @@
+mixin address(mold)
+    case mold
+        when "ticket"
+            +ticketaddress()
+
+
+mixin ticketaddress()
+    ul.order-list.myorder-list
+        li
+            i.add-bg
+            label.lab-title 地址
+            .order-item: a(href="#")
+                span 8 Sentosa Gateway, Sentosa Island,Singapore098269
+                i.font-icon.icon-iconfont-jiantou
+        li
+            label.lab-title.hotel-label
+                i.page-icon.icon-star-full
+                i.page-icon.icon-star-full
+                i.page-icon.icon-star-full.no
+                i.page-icon.icon-star-full.no
+                i.page-icon.icon-star-full.no
+                em 5分
+            .order-item.fr
+                a(href="comment.html")
+                    span
+                        em.c-f63 55
+                        | 人评价
+                    i.font-icon.icon-iconfont-jiantou
+

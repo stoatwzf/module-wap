@@ -1,0 +1,31 @@
+extends layout
+block append top
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+block content
+    .prologue-box
+        h1.prologue-logo
+        .prologue-tip
+        .prologue-tip2
+        ul.swiper-wrapper.swiper-no-swiping
+            li.swiper-slide
+                a(href="#", style="background-image:url('images/index/prologue1.jpg');")
+            li.swiper-slide
+                a(href="#", style="background-image:url('images/index/prologue2.jpg');")
+            li.swiper-slide
+                a(href="/", style="background-image:url('images/index/prologue3.jpg');")
+        a(href="index.html").get-into 立即体验
+
+    script.
+        window.onload = function () {
+            $(".swiper-wrapper").height($(window).height());
+        }
+        var swiper = new Swiper('.prologue-box', {
+            noSwiping: true,
+            loop: true,
+            speed: 4000,
+            autoplay: 1000,
+            effect: 'fade'
+        });
+block footer

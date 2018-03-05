@@ -1,0 +1,207 @@
+.myorder-tab { position: fixed; z-index: 33; top: 0; left: 0; width: 100%; }
+.myorder-tab li { width: 20%; }
+.myorder-tab li a { height: 1.45rem; line-height: 1.45rem; }
+.myorder-tab li a.c-base { color: #f00; }
+/*ÏÂÀ­²éÑ¯*/
+.tab-search-panel { position: fixed; background-color: #fff; width: 100%; left: 0; z-index: 21; overflow-x: hidden; overflow-y: auto; }
+.tab-search-panel li { border-bottom: 1px solid #eee; }
+.tab-search-panel li a { display: block; padding: 0.75rem; font-size: 0.6rem; }
+.tab-address { }
+.tab-address ul { padding: 0.5rem 0 0 0.4rem; }
+.tab-address ul li { float: left; border: 1px solid #dbdbdb; height: 1.5rem; border-radius: 0.3rem; line-height: 1.5rem; margin: 0 0.4rem 0.5rem 0; }
+.tab-address ul li a { padding: 0 0.7rem; height: 100%; }
+/*ÎÒµÄ¶©µ¥ÁÐ±í*/
+.myorder-item { background-color: #fff; padding: 0 1rem; font-size: 0.6rem; }
+.myorder-header { padding: 0.55rem 0 0.3rem 0; overflow: hidden; border-bottom: 1px solid #eee; font-size: 0.5rem; color: #666; }
+.myorder-header .price { color: #f00; font-size: 0.6rem; }
+.order-info i { margin-right: 0.25rem; font-size: 0.75rem; color: #333; vertical-align: middle; }
+.order-info em { margin: 0 0.25rem; }
+.order-time { margin-left: 0.6rem; }
+.myorder-item a { display: block; color: #666; padding: 0.5rem 0; }
+.myorder-item-title { font-size: 0.7rem; color: #333; }
+.myorder-item a p { padding-top: 0.25rem; }
+/*ÎÞÊý¾Ý*/
+.no-data { width: 6.5rem; margin: 2.5rem auto; font-size: 0.75rem; color: #999; }
+.no-data i { float: left; font-size: 0.75rem;/* margin-top: 0.125rem;*/ }
+.no-data p { margin-left: 1.5rem; line-height: 100%; text-shadow: 1px 2px 2px #fff; font-size: 0.7rem; }
+.no-data p em { font-size: 0.4rem; display: block; }
+/*ÁÐ±íÇÐ»»*/
+.ticket-tab { position: fixed; z-index: 33; top: 0; left: 0; width: 100%; }
+.ticket-tab li { width: 50%; }
+.ticket-tab li a { height: 1.45rem; line-height: 1.45rem; }
+.ticket-tab li a:after { font-family: 'pageicon'; content: "\e900"; font-size: 0.8rem; vertical-align: middle; }
+.ticket-tab li a.c-base:after { content: "\e913"; }
+.hotel-tab li { width: 33%; }
+.rental-tab { top: 2.1rem; border-top: 1px solid #eee; }
+.zyx-list .page-list-title { height: auto; max-height: 1.6rem; overflow: hidden; line-height: 0.8rem; margin-bottom: 0.1rem; }
+.h28 { height: 2.8rem; }
+.mh28 { min-height: 2.8rem; }
+/*¹ºÂòÈËÊýÑùÊ½*/
+.page-list-num { margin-right: 0.5rem; display: inline-block; vertical-align: middle; }
+/*±ß¿òÁÐ±íÑùÊ½*/
+.list-border { margin: 0 0.5rem; }
+.list-border .page-list-img { width: 4.25rem; }
+.list-border .page-list-info { margin-left: 4.75rem; }
+/*ÉÌÆ·*/
+.goods-list { }
+.goods-list li { width: 50%; padding: 0.7rem 0.75rem; background-color: #fff; box-sizing: border-box; border: 1px solid #eee; float: left; border-right: none; border-top: none; }
+.goods-list li a { font-size: 0.5rem; color: #333; display: block; }
+.goods-list-img { width: 6.25rem; height: 6.25rem; overflow: hidden; margin: 0 auto; }
+.goods-list-img img { width:100%; height: 100%; }
+.goods-list-title { margin: 0.3rem 0 0.5rem; line-height: 140%; height: 1.5rem; overflow: hidden; }
+.goods-list-explian { overflow: hidden; color: #999; font-size: 0.45rem; line-height: 160%; }
+.goods-list-explian .price { margin-right: 0.25rem; }
+.goods-list-explian .price strong { font-size: 0.6rem; }
+.goods-list-explian .fr { vertical-align: bottom; }
+.goods-list-article { font-size: 0.5rem; color: #999; margin-bottom: 0.3rem; line-height: 140%; }
+.ticket-list .page-list-article, .guide-list .page-list-article { height: 1.3rem; }
+.page-list-article .index-ditu { font-size: 0.5rem; vertical-align: middle; position: relative; top: -0.03rem; }
+.ticket-list .page-list-explian { text-align: right; }
+.guide-list .page-list-explian { text-align: left; }
+.guide-list .page-list-explian span { margin-right: 0.25rem; }
+.guide-list .page-list-title .score { font-size: 0.55rem; color: #999; }
+/*´óÍ¼ÁÐ±í*/
+.page-list1 { padding: 0.5rem; }
+.page-list1 li { background-color: #fff; border: 1px solid #f0f0f0; border-radius: 5px; margin-bottom: 0.25rem; }
+.page-list1 li a { display: block; font-size: 0.5rem; }
+.list-img { height: 5.25rem; overflow: hidden; }
+.list-img img { border-top-left-radius: 5px; border-top-right-radius: 5px; width: 100%; height: 100%; }
+.page-list1-title { font-size: 0.75rem; padding: 0.25rem 0.6rem; }
+.page-list1-title span { font-size: 0.5rem; color: #999; }
+.page-list1-explian { font-size: 0.45rem; padding: 0 0.6rem 0.5rem; color: #999; line-height: 0.7rem; }
+.page-list1-explian .time { color: #f63; float: left; }
+.page-list1-explian .time i { float: left; padding-right: 0.2rem; line-height: 0.7rem; }
+.page-list1-explian em { margin: 0 0.25rem; }
+.page-list1-explian span { font-size: 0.5rem; }
+.rental-list { padding: 0; }
+.rental-list li { border-radius: 0; }
+.rental-list .list-img { height: 5.9rem; border-bottom: 1px solid #ebebeb; }
+.rental-list .list-img img { border-radius: 0; }
+/*Ð¡Í¼ÁÐ±í*/
+.page-list2 { padding: 0.5rem; }
+.page-list2 li { width: 4rem; float: left; margin: 0.5rem; }
+.page-list2 li a { display: block; text-align: center; }
+.page-list2-img { width: 4rem; height: 4rem; overflow: hidden; }
+.page-list2-img img { height: 100%; border-radius: 0.15rem; }
+.page-list2-title { font-size: 0.65rem; color: #333; padding: 0.5rem 0 0.2rem; }
+.acting-list .page-list1-title { text-align: center; }
+/*´ú½ðÈ¯*/
+.coupon-list { background-color: #fff; }
+.coupon-list li { height: 4rem; background: url("../images/member/coupon.png") 0 4rem no-repeat; background-size: 100% auto; border-bottom: 1px solid #dcdcdc; padding: 0.25rem 0; margin: 0 0.5rem; }
+.coupon-panel { height: 3.75rem; background-color: #f2efdc; }
+.coupon-mark { width: 3.5rem; height: 3.75rem; float: right; font-size: 0.6rem; color: #f2efdc; background-size: cover; background-repeat: no-repeat; text-align: center; padding: 0.3rem; box-sizing: border-box; }
+.coupon-mark p { margin-top: 1rem; line-height: 140%; }
+.coupon-mark p em { font-size: 0.45rem; display: block; }
+.mark-unuse { background-image: url("../images/member/coupon-mark-unuser.png"); }
+.mark-overdue { background-image: url("../images/member/coupon-mark-overdue.png"); }
+.mark-used { background-image: url("../images/member/coupon-mark-used.png"); }
+.coupon-info { margin-right: 4rem; font-size: 0.6rem; color: #333; padding: 0.25rem; }
+.coupon-info p:last-child { color: #666; font-size: 0.55rem; }
+.coupon-price { padding: 0.25rem 0; }
+.coupon-price .price em { color: #dc4236; }
+.coupon-price .price strong { font-size: 1.3rem; color: #dc4236; font-weight: bold; }
+.coupon-info p:first-child em { color: #dc4236; }
+.top-tab a span { display: inline-block; height: 1rem; line-height: 1rem; border-bottom: 3px solid #fff; }
+.top-tab a.hover span { border-bottom: 2px solid #009fd5; color: #009fd5; }
+.top-tab a.hover:after { color: #009fd5; }
+.head-box { height: 4.2rem; position: relative; z-index: 24; }
+.folk-head { height: 2.1rem; }
+.head-search { background: #fff; height: 2.1rem; border-top: 1px solid #dcdcdc; z-index: 25; box-sizing: border-box; width: 100%; position: fixed; left: 0; top: 0; }
+.header-tab { padding-bottom: 0; width: 100%; height: 2.1rem; position: relative; z-index: 24; }
+.ticket-tab { position: fixed; left: 0; top: 0rem; border-top: 1px solid #eee; padding: 0; height: 2.1rem; z-index: 21; box-sizing: border-box; overflow: hidden; }
+.hs-tab { }
+.hs-tab .ticket-tab { top: 2.1rem; }
+.rental-header { height: 4.2rem; }
+.rental-header .ticket-tab { top: 2.1rem; }
+.rental-header .bc-tab { top: 0; }
+.search-box { height: 1.5rem; margin: 0.2rem auto 0; position: relative; width: 14.325rem; }
+.search-box input[type="text"] { width: 12.725rem; padding-top: 0; padding-bottom: 0; padding-right: 1.6rem; height: 1.5rem; background: #f5f5f5; border: 1px solid #dcdcdc; text-align: center; color: #999; font-size: 0.6rem; }
+.search-box input[type="submit"] { position: absolute; top: 0; padding: 0; right: 0; width: 1.6rem; height: 1.5rem; background: url("../images/common/search-bar.png") no-repeat center; background-size: 0.625rem 0.625rem; border: none; font-size: 0; }
+.ticket-tab li a { height: 2.1rem; line-height: 2.1rem; }
+.page-list-zy { line-height: 0.8rem; padding-top: 0.1rem; }
+.page-list-zy .page-list-tits { display: inline-block; vertical-align: top; overflow: hidden; height: 0.8rem; line-height: 0.8rem; box-sizing: border-box; border: 1px solid #f47; color: #f47; font-size: 0.5rem; padding: 0 0.3rem; border-radius: 0.1rem; margin-right: 0.2rem; margin-bottom: 0.2rem; }
+.page-list-article { overflow: hidden; line-height: 0.8rem; height: 0.8rem !important; }
+.hauto .page-list-article { height: auto !important; }
+.page-list-img { width: 4.625rem; height: 3.825rem; }
+.page-list-img img { width: 4.625rem; height: 3.825rem; }
+.page-list-explian .score { color: #ff6633; margin-left: 0.4rem; }
+.page-list-explian .original-price { margin-left: 0; vertical-align: top; }
+.page-list-title { padding-top: 0.2rem; }
+.search-hotel { width: 10.3rem; margin: 0.2rem 0.4rem 0.2rem 0; }
+.search-hotel input[type="text"] { width: 8.3rem; padding-left: 0.4rem; overflow: hidden; }
+.stay-away { width: 3.5rem; font-size: 0.6rem; margin-left: 0.8rem; border-right: 1px solid #e5e5e5; height: 1.25rem; margin-top: 0.45rem; }
+.stay-away .stay-time, .stay-away .away-time { height: 0.8rem; line-height: 0.8rem; }
+.stay-away .stay-time { margin-top: -0.2rem }
+.stay-away span { width: 1.8rem; color: #ff6633; }
+.stay-away i:after { font-family: 'pageicon'; content: "\e900"; font-size: 0.8rem; vertical-align: middle; float: left; display: inline-block }
+.page-list-explian .yj { margin-left: 0.1rem; float: right; }
+.hotel-base { border: 1px solid #26bcef; color: #26bcef; display: inline-block; vertical-align: top; }
+.food-base { border: 1px solid #ff4477; color: #ff4477; }
+.add-bar { background-position: 0 -2.6rem; width: 0.425rem; height: 0.575rem; margin: 0; }
+.sale-num { color: #ff6633; width: 1.3rem; overflow: hidden; display: inline-block; vertical-align: middle; position: relative; top: -0.03rem; }
+/*lky 2016-2-18 Í¼²á*/
+.demo-gallery { width: 16rem; padding-bottom: 0.5rem; }
+.demo-gallery a { float: left; width: 7.25rem; margin: 0.5rem 0 0 0.5rem; height: 5.75rem; }
+.demo-gallery a img { width: 100%; height: 100%; }
+#gallery .pswp__counter { position: fixed; width: 16rem; top: auto; left: 50%; bottom: 0; margin-left: -8rem; text-align: center; }
+/*lky 2016-2-26 ¹¥ÂÔ*/
+.page-list2-entit { font-size: 0.45rem; color: #999; text-transform: uppercase; }
+.list-tab { width: 16rem; overflow-y: hidden; overflow-x: auto; height: 2.1rem; border-bottom: 1px solid #dcdcdc; box-sizing: border-box; background: #fff; position: fixed; left: 50%; margin-left: -8rem; top: 2.1rem; z-index: 999; }
+.list-tab::-webkit-scrollbar {
+width: 0px;
+height:0px;
+}
+.list-tab ul { display: inline-block; }
+.list-tab li { float: left; height: 2.1rem; width: 4.25rem; overflow: hidden; font-size: 0.6rem; line-height: 2.1rem; text-align: center; }
+.list-tab li a { display: block; }
+.list-tab li a.on { color: #ff6633; }
+.sty-list {/* padding:0.25rem 0; */ padding: 0; }
+.sty-list li { border: 0; border-bottom: 1px solid #ccc; border-radius: 0; }
+.sty-list img { border-radius: 0; }
+.sty-list .list-img { height: 6rem; border-bottom: 1px solid #ccc; }
+/*ÑÝÒÕ*/
+.acting-list { padding: 0.25rem; }
+.acting-list li { border-radius: 0; }
+.acting-list .list-img { position: relative; height: 6.75rem; }
+.acting-list .list-img img { border-radius: 0; position: relative; z-index: 5; }
+.acting-list .list-img .title { position: absolute; bottom: 0; left: 0; width: 100%; padding: 0.3rem 0.6rem 0; box-sizing: border-box; z-index: 10; height: 2rem; line-height: 1.5rem; font-size: 0.75rem; color: #fff; background-image: -webkit-linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0)); background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0) ); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.acting-list .list-img .tip { position: absolute; left: 0.6rem; top: 0.6rem; z-index: 8; width: 2.2rem; height: 1.125rem; background: url(../images/common/acting-tip-bg.png) no-repeat; background-size: 2.2rem 1.125rem; line-height: 1.125rem; text-indent: 0.25rem; color: #fff; }
+.acting-list .page-list-explian { margin: 0; padding: 0.5rem 0.6rem; text-align: right; }
+/*×ÔÓÉÐÐ*/
+.zyx-list .page-list-zy .page-list-tits { color: #f47; border-color: #f47; }
+/*½ñÈÕÁÐ±í*/
+.tdy-list { padding: 0; }
+.tdy-list li { border-left: 0; border-right: 0; border-top: 0; }
+.tdy-list .page-list-explian .price { float: left; margin-right: 0.5rem; }
+.qg-btn { background: #f63; color: #fff; display: inline-block; padding: 0.2rem 0.3rem; margin-top: -0.2rem; border-radius: 0.1rem; }
+/*购物车 4.9 ceh*/
+.foods-tab li { width: 33.3%; }
+.shop-box { width: 100%; background-color: #fff; overflow: hidden; }
+.p-box { width: 100%; box-sizing: border-box; padding: 0.5rem 0.75rem; overflow: hidden; }
+.check { display: inline-block; float: left; width: 0.8rem; height: 0.8rem; border-radius: 50%; border: 1px solid #ddd; text-align: center; line-height: 0.8rem; vertical-align: middle; position: relative; }
+.check.on i { display: inline-block; width: 0.3rem; height: 0.3rem; border-radius: 50%; background-color: #f63; position: absolute; left: 50%; top: 50%; margin-left: -0.15rem; margin-top: -0.15rem; }
+.p-box .tit { color: #333; font-size: 0.75rem; float: left; vertical-align: middle; margin-left: 0.4rem; }
+.p-box .tit i { display: inline-block; margin-top: 0.05rem; width: 0.75rem; height: 0.75rem; margin-right: 0.45rem; vertical-align: top; }
+.p-box i.font-icon { float: right; color: #adacb3; }
+.p-box .tit i.ticket { background: url(../images/common/shop-money.png) no-repeat; background-size: cover; }
+.p-box .tit i.hotel { background: url(../images/common/shop-hotel.png) no-repeat; background-size: cover; }
+.bg-box { background-color: #f7f7f7; padding: 0.75rem 0.75rem 0.75rem 0.95rem; }
+.bg-box h3 { font-size: 0.75rem; color: #333; margin-bottom: 0.5rem; }
+.bg-box p { overflow: hidden; margin-top: 0.3rem; }
+.bg-box p span em { font-size: 0.6rem; color: #999; }
+.bg-box p span label { color: #333; font-size: 0.6rem; margin-right: 1rem; }
+.bg-box .c-f63 { font-size: 0.6rem; }
+.bg-box .c-333 { font-size: 0.6rem; }
+.s-time { padding: 0.3rem 0.75rem; width: 100%; box-sizing: border-box; background: #fff; overflow: hidden; font-size: 0.6rem; }
+.s-time label { font-size: 333; margin-right: 1rem; }
+.s-time span { color: #999; vertical-align: middle; }
+.total-price .check { margin: 0.6rem 0.2rem 0 0; }
+/*瀑布流*/
+.tiles-wrap li { display: block; opacity: 1; text-align: center; list-style-type: none; background-color: #fff; float: left; cursor: pointer; width:7.5rem;  -webkit-border-radius: 0.2rem; -moz-border-radius: 0.2rem; border-radius:  0.2rem; }
+.tiles-wrap.animated li {  -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+.tiles-wrap li.wookmark-inactive { visibility: hidden; opacity: 0; }
+.tiles-wrap li:hover { background-color: #fafafa; }
+.tiles-wrap li img { width:7.5rem; display: block; }
+.tiles-wrap li a { display: block;}
+.tiles-wrap li h4{ font-size:0.6rem; color:#333; text-align:left; padding:0 0.35rem 0.1rem; line-height: 0.8rem; padding-top: 0.2rem; }
+.tiles-wrap li p{ font-size:0.5rem; color:#999; text-align:left; padding:0 0.35rem; line-height: 0.8rem; padding-bottom: 0.2rem;}

@@ -1,0 +1,113 @@
+mixin main(mold)
+    case mold
+        when "ticket"
+            +ticketmain()
+
+
+mixin ticketmain()
+    .detail-menu-box
+        ul.ticket-details-tab.tab.clearfix.details-tab#detailmenu
+            li: a(href="#mpxx").active 门票预订
+            li: a(href="#ydxz") 预订须知
+            li: a(href="#jqjs") 景区介绍
+            li: a(href="#zbtj") 景区攻略
+    ul.details-list.menu-module#mpxx
+        li
+            .pro-info
+                h4.pro-info-title 黄果树黄果树优惠套票
+                p.pro-info-explian
+                    a(href="javascript:;").c-base.more.pxxq 查看详情&gt;
+            .pro-price
+                p
+                    span.price
+                        em ￥
+                        strong 2180
+                    span.original-price
+                        em ￥
+                        strong 3180
+                a(href="ticket-order.html") 预订
+        li
+            .pro-info
+                h4.pro-info-title 黄果树黄果树优惠套票
+                p.pro-info-explian
+                    a(href="javascript:;").c-base.more.pxxq 查看详情&gt;
+            .pro-price
+                p
+                    span.price
+                        em ￥
+                        strong 2180
+                    span.original-price
+                        em ￥
+                        strong 3180
+                a(href="ticket-order.html") 预订
+    .page-line
+    h3.page-title: strong 预订须知
+    .tab-article.bgfff.menu-module#ydxz
+        strong 优待政策
+        br
+        p
+            | 免费政策：儿童身高1.2米（不含）以下免费。
+            br
+            | 优惠政策：儿童身高1.2-1.5米之间(含1.2米,不含1.5米)购买儿童票。
+            br
+            | 以上信息仅供参考，具体信息请以景区当天披露为准。
+            br
+        strong 温馨提示
+        br
+        p 为普及旅游安全知识及旅游文明公约，使您的旅程顺利圆满完成，特制定《携程旅游告游客注意事项》，请您认真阅读并切实遵守。
+        strong 安全指南
+        br
+        p 旅游安全是旅游的生命线，为保障游客“住得安心、吃得放心、玩的舒心”，携程从出行常识、旅游活动和特殊人群三方面为您提供旅游安全指南。出行前，提醒您仔细阅读相关内容，重视旅游安全，使您的出游真正成为“快乐之游、难忘之游、收获之游”
+    .page-line
+    h3.page-title: strong 景区介绍
+    .tab-article.bgfff.menu-module#jqjs
+        p 莫尔道嘎是蒙语，意为骏马出征。莫尔道嘎森林公园位于大兴安岭林区腹地，是我国面积最大的森林公园，以我国北部特色的针叶原始森林为主，有很多森林、河流的风光，每年秋季树叶泛黄泛红十分美丽，是摄影爱好者们的最爱。莫尔道嘎景区里还有岛屿、漂流等特色娱乐活动，幸运的话还能看到园区里的野生动物。
+        p 来莫尔道嘎森林公园游玩首先要到达莫尔道嘎镇，然后驱车前往景区，景区内没有区间车，只能自驾或是在镇上包车进入。莫尔道嘎景区内纵深一百多公里，均为柏油马路。莫尔道嘎国家森林公园并不全年开放，开放时间是夏秋季节，一般从五月份开始到十一假期结束时关闭。
+        p 进入莫尔道嘎景区映入眼帘的便是浓密的林区葱葱郁郁，进入景区后的第一座桥处需要注意，这里曾是电影《夜宴》中部分镜头的取景地，可以寻找熟悉的影像。继续前行将会经过景区内的多个景点，有很多纪念成吉思汗和蒙古族特色的雕塑、敖包、主题园等，更多的则是欣赏森林山川景色的地点。其中红豆坡、一目九岭、冰上森林较有特点。
+        p 红豆坡得名于该山坡之上松树下面长了许多的红豆树，北方的红豆树均为灌木。在此可以采摘到红豆，并且树林里有很多小松鼠跑来跑去，煞是有趣。而一目九岭是指山边的观景台，在此处眺望可以看到前方山峦叠嶂，视野极为开阔，可以在此数一数到底是不是真的有九层。冰上森林的地表是永冻层冰川遗迹，上面长有一些树木。但由于树木扎根于永冻层始终营养不良，生长的形如枯萎，树干上又长期都有苔藓寄生，被称为“老头树”，非常特别。
+        p 游览完此处的几个景点后便主要是前往白鹿、狼山两岛，大约有五十公里，需要一个多小时到达。在这里额尔古纳河蜿蜒，河中有两个岛屿。岛上林木苍翠，其中有很多白桦树，每年秋季颜色十分亮丽，这里也是摄影爱好者们的必去之地，十分容易拍出大片。白鹿岛处还有漂流可以玩，价格大概是几十块钱每人，需要提前讲好，漂流约9公里，到下游的大桥处为止，喜欢玩水的朋友们可以体验一下。
+    .page-line
+    h3.page-title: strong 景区攻略
+    ul.page-list.index-page-list.menu-module#zbtj
+        li: a(href="ticket-details.html")
+            .page-list-img: img(src="/images/demo/ticket-list-img2.jpg")
+            .page-list-info
+                h3.page-list-title 黄果树古街酒店+景点精选套餐
+                p.page-list-article 黄果树黄果树市莫尔道嘎镇黄果树黄果树市莫尔道嘎镇黄果树黄果树市莫尔道嘎镇黄果树黄果树市莫尔道嘎镇黄果11公里处
+                p.page-list1-explian.clearfix
+                    span.time
+                        i.page-icon.icon-iconfont-time
+                        | 2015-09-02
+                    span.fr
+                        i.page-icon.icon-iconfont-chakan.mr02
+                        | 186
+        li: a(href="ticket-details.html")
+            .page-list-img: img(src="/images/demo/ticket-list-img2.jpg")
+            .page-list-info
+                h3.page-list-title 维多利亚酒店+景点精选套餐
+                p.page-list-article 黄果树黄果树市莫尔道嘎镇11公里处
+                p.page-list1-explian.clearfix
+                    span.time
+                        i.page-icon.icon-iconfont-time
+                        | 2015-09-02
+                    span.fr
+                        i.page-icon.icon-iconfont-chakan.mr02
+                        | 186
+    .masks
+    .order-show.hide
+        p.order-tit#show-h1
+            | 新加坡环球影城优惠套票
+            i.close-btn.font-icon.icon-iconfont-32pxchaxian
+        .details-tp.mb05#show-h2
+            .order-sprice
+                span.yj ￥2110.0
+                span.xj
+                    em ￥
+                    | 2180.0
+        .order-showcon
+            p.order-showcon-tit 有效日期
+            p 游玩日期当日有效
+            p.order-showcon-tit 预订须知
+            p 环球影城【扫码入园】票种票源紧张，库存实时变动，如恰逢您无法购买，请选择其它取票方式，如环球影城门口取票等，小编们会尽快补充【扫码入园】的门票资源的！请大家知晓。环球影城【扫码入园】票种票源紧张，库存实时变动，如恰逢您无法购买，请选择其它取票方式，如环球影城门口取票等，小编们会尽快补充【扫码入园】的门票资源的！请大家知晓。环球影城【扫码入园】票种票源紧张，库存实时变动，如恰逢您无法购买，请选择其它取票方式，如环球影城门口取票等
+
+

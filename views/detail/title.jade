@@ -1,0 +1,19 @@
+mixin title(mold)
+    case mold
+        when "ticket"
+            +tickettitle()
+
+
+mixin tickettitle()
+    .details-info
+        .details-tp
+            span.details-tits 主题乐园
+            span.details-tits 历史人文
+            span.yj.fr 原价：1530
+        p.details-explian
+            span
+                em.c-f63 178
+                | 人购买
+            span.price.fr
+                em ￥
+                strong 2180.0

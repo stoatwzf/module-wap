@@ -1,0 +1,13 @@
+extends layout
+block append top
+    link(rel="stylesheet", type="text/css", href="/css/list.css")
+block content
+    include list/listSearch
+    include list/listPage
+    +search(mold)
+    .page-line
+    +list(mold)
+    .mask#mask
+block append footer
+    script(type="text/javascript", src="/js/touch-0.2.14.min.js")
+    script(type="text/javascript", src="/js/list.js")
